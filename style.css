@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --background: #130f0d;
+    --colorText: #FFF;
+    --colorCard: #1A1A1C;
+    --boxShadonwCard: #FD951FCC;
+    --colorBoard: #141316;
+    --boxShadonwBoard: #fD951F11;
+}
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--colorText)
+}
+
+.boards {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 32px;
+}
+
+.board {
+    background: var(--colorBoard);
+    border: 1px solid var(--boxShadonwBoard);
+    border-radius: 4px;
+    margin: 0 16px;
+}
+
+.board h3 {
+    padding: 16px;
+    margin: 0;
+    color: var(--boxShadonwCard);
+}
+
+.dropzone {
+    padding: 16px;
+    min-width: 282px;
+    min-height: 200px;
+}
+
+.card {
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px var(--boxShadonwCard);
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    background: var(--colorCard);
+}
+
+.status {
+    width: 30px;
+    height: 8px;
+    background: red;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.green {
+    background-color: #23D2AC;
+}
+
+.blue {
+    background-color: #33ADFF;
+}
+
+.highlight {
+    background: #FD951F08;
+}
+
+.card, .dropzone {
+    transition: 400ms;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: #4CD13711
+}

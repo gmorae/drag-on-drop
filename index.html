@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="boards">
+
+        <div class="board">
+            <h3>A fazer</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status"></div>
+                    <div class="content">Códigos js</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <h3>Fazendo</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content">Códigos js</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <h3>Feito</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status blue"></div>
+                    <div class="content">Códigos js</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
